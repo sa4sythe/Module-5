@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-    buildAndShowHomeHTML,
+    buildAndShowHomeHtml,
   true); 
 });
 // *** finish **
@@ -91,7 +91,7 @@ $ajaxUtils.sendGetRequest(
 
 // Builds HTML for the home page based on categories array
 // returned from the server.
-function buildAndShowHomeHTML (categories) {
+function buildAndShowHomeHtml (categories) {
 
   // Load home snippet page
   $ajaxUtils.sendGetRequest(
